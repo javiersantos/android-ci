@@ -16,7 +16,7 @@ Includes the latest SDK Build Tools and SDK Platform.
 *.gitlab-ci.yml*
 
 ```yml
-image: javiersantos/gitlab-ci:latest
+image: javiersantos/android-ci:latest
 
 before_script:
     - export GRADLE_USER_HOME=`pwd`/.gradle
@@ -43,7 +43,7 @@ build:
 *bitbucket-pipeline.yml*
 
 ```yml
-image: javiersantos/gitlab-ci:latest
+image: javiersantos/android-ci:latest
 
 pipelines:
   default:
