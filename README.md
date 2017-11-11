@@ -4,7 +4,52 @@ An image for building Android apps with support for multiple SDK Build Tools. Th
 
 ## Available images
 ### javiersantos/android-ci:latest
+
+```yml
+image: javiersantos/android-ci:latest
+```
+
 Includes the latest SDK Build Tools and SDK Platform.
+
+* Build Tools: 27.0.1
+* Platform: Android 25, 26 & 27
+* Android Support: Constraint Layout 1.0.2 & Constraint Layout Solver 1.0.2
+
+### javiersantos/android-ci:27.0.1
+
+```yml
+image: javiersantos/android-ci:27.0.1
+```
+
+* Build Tools: 27.0.1
+* Platform: Android 25, 26 & 27
+* Android Support: Constraint Layout 1.0.2 & Constraint Layout Solver 1.0.2
+
+### javiersantos/android-ci:27.0.0
+
+```yml
+image: javiersantos/android-ci:27.0.0
+```
+
+* Build Tools: 27.0.1
+* Platform: Android 25, 26 & 27
+* Android Support: Constraint Layout 1.0.2 & Constraint Layout Solver 1.0.2
+
+### javiersantos/android-ci:26.0.3
+
+```yml
+image: javiersantos/android-ci:26.0.3
+```
+
+* Build Tools: 26.0.3
+* Platform: Android 25, 26 & 27
+* Android Support: Constraint Layout 1.0.2 & Constraint Layout Solver 1.0.2
+
+### javiersantos/android-ci:26.0.2
+
+```yml
+image: javiersantos/android-ci:26.0.2
+```
 
 * Build Tools: 26.0.2
 * Platform: Android 25, 26 & 27
