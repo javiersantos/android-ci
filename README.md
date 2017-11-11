@@ -11,7 +11,7 @@ Includes the latest SDK Build Tools and SDK Platform.
 * Platform: Android 25, 26 & 27
 * Android Support: Constraint Layout 1.0.2 & Constraint Layout Solver 1.0.2
 
-## Sample usage
+## Sample usages
 ### GitLab
 *.gitlab-ci.yml*
 
