@@ -29,7 +29,7 @@ image: javiersantos/android-ci:27.0.1
 image: javiersantos/android-ci:27.0.0
 ```
 
-* Build Tools: 27.0.1
+* Build Tools: 27.0.0
 * Platform: Android 25, 26 & 27
 
 ### javiersantos/android-ci:26.0.3
