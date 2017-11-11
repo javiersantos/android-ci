@@ -13,7 +13,6 @@ Includes the latest SDK Build Tools and SDK Platform.
 
 * Build Tools: 27.0.1
 * Platform: Android 25, 26 & 27
-* Android Support: Constraint Layout 1.0.2 & Constraint Layout Solver 1.0.2
 
 ### javiersantos/android-ci:27.0.1
 
@@ -23,7 +22,6 @@ image: javiersantos/android-ci:27.0.1
 
 * Build Tools: 27.0.1
 * Platform: Android 25, 26 & 27
-* Android Support: Constraint Layout 1.0.2 & Constraint Layout Solver 1.0.2
 
 ### javiersantos/android-ci:27.0.0
 
@@ -33,7 +31,6 @@ image: javiersantos/android-ci:27.0.0
 
 * Build Tools: 27.0.1
 * Platform: Android 25, 26 & 27
-* Android Support: Constraint Layout 1.0.2 & Constraint Layout Solver 1.0.2
 
 ### javiersantos/android-ci:26.0.3
 
@@ -43,7 +40,6 @@ image: javiersantos/android-ci:26.0.3
 
 * Build Tools: 26.0.3
 * Platform: Android 25, 26 & 27
-* Android Support: Constraint Layout 1.0.2 & Constraint Layout Solver 1.0.2
 
 ### javiersantos/android-ci:26.0.2
 
@@ -53,7 +49,6 @@ image: javiersantos/android-ci:26.0.2
 
 * Build Tools: 26.0.2
 * Platform: Android 25, 26 & 27
-* Android Support: Constraint Layout 1.0.2 & Constraint Layout Solver 1.0.2
 
 ## Sample usages
 ### GitLab
