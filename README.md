@@ -11,7 +11,16 @@ image: javiersantos/android-ci:latest
 
 Includes the latest SDK Build Tools and SDK Platform.
 
-* Build Tools: 27.0.2
+* Build Tools: 27.0.3
+* Platform: Android 25, 26 & 27
+
+### javiersantos/android-ci:27.0.3
+
+```yml
+image: javiersantos/android-ci:27.0.3
+```
+
+* Build Tools: 27.0.3
 * Platform: Android 25, 26 & 27
 
 ### javiersantos/android-ci:27.0.2
@@ -64,7 +73,7 @@ image: javiersantos/android-ci:26.0.2
 *.gitlab-ci.yml*
 
 ```yml
-image: javiersantos/android-ci:latest
+image: javiersantos/android-ci:27.0.3
 
 before_script:
     - export GRADLE_USER_HOME=`pwd`/.gradle
@@ -91,7 +100,7 @@ build:
 *bitbucket-pipeline.yml*
 
 ```yml
-image: javiersantos/android-ci:latest
+image: javiersantos/android-ci:27.0.3
 
 pipelines:
   default:
