@@ -1,4 +1,4 @@
-FROM ubuntu:17.04
+FROM ubuntu:18.04
 LABEL maintainer="Javier Santos"
 
 ENV VERSION_SDK_TOOLS "3859397"
