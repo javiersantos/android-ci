@@ -9,16 +9,21 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -qq update && \
     apt-get install -qqy --no-install-recommends \
+      bridge-utils \
       bzip2 \
       curl \
       git-core \
       html2text \
-      openjdk-8-jdk \
-      libc6-i386 \
-      lib32stdc++6 \
       lib32gcc1 \
       lib32ncurses5 \
+      lib32stdc++6 \
       lib32z1 \
+      libc6-i386 \
+      libqt5widgets5 \
+      libvirt-bin \
+      openjdk-8-jdk \
+      qemu-kvm \
+      ubuntu-vm-builder \
       unzip \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
