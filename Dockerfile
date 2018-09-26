@@ -47,9 +47,6 @@ RUN mkdir -p /root/.android && \
 RUN while read -r package; do PACKAGES="${PACKAGES}${package} "; done < /sdk/packages.txt && \
     ${ANDROID_HOME}/tools/bin/sdkmanager ${PACKAGES}
 
-RUN export PATH=/sdk/tools/bin:$PATH \
-      export PATH=/sdk/tools:$PATH \
-      export PATH=/sdk/emulator:$PATH \
-      echo y | sdkmanager "system-images;android-25;google_apis;x86_64" "emulator" \
-      mkdir ~/.android/avd \
-      echo no | avdmanager create avd -n test -k "system-images;android-25;google_apis;x86_64"
+RUN echo y | /sdk/tools/bin/sdkmanager "system-images;android-25;google_apis;x86_64" "emulator" && \
+      mkdir ~/.android/avd  && \
+      echo no | /sdk/tools/bin/avdmanager create avd -n test -k "system-images;android-25;google_apis;x86_64"
