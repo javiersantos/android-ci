@@ -8,7 +8,7 @@ ENV PATH "$PATH:${ANDROID_HOME}/tools"
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -qq update && \
-    apt-get install -qqy --no-install-recommends \
+      apt-get install -qqy --no-install-recommends \
       bridge-utils \
       bzip2 \
       curl \
@@ -46,3 +46,10 @@ RUN mkdir -p /root/.android && \
 
 RUN while read -r package; do PACKAGES="${PACKAGES}${package} "; done < /sdk/packages.txt && \
     ${ANDROID_HOME}/tools/bin/sdkmanager ${PACKAGES}
+
+RUN export PATH=/sdk/tools/bin:$PATH \
+      export PATH=/sdk/tools:$PATH \
+      export PATH=/sdk/emulator:$PATH \
+      echo y | sdkmanager "system-images;android-25;google_apis;x86_64" "emulator" \
+      mkdir ~/.android/avd \
+      echo no | avdmanager create avd -n test -k "system-images;android-25;google_apis;x86_64"
