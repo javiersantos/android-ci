@@ -19,6 +19,7 @@ RUN apt-get -qq update && \
       lib32stdc++6 \
       lib32z1 \
       libc6-i386 \
+      libqt5svg5 \
       libqt5widgets5 \
       libvirt-bin \
       openjdk-8-jdk \
