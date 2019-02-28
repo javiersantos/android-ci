@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:18.10
 LABEL maintainer="Javier Santos"
 
 ENV VERSION_SDK_TOOLS "4333796"
@@ -24,6 +24,8 @@ RUN apt-get install -qqy --no-install-recommends \
       lib32ncurses5 \
       lib32z1 \
       unzip \
+      zip \
+      curl \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN rm -f /etc/ssl/certs/java/cacerts; \
