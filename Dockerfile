@@ -4,7 +4,7 @@ LABEL maintainer="Javier Santos"
 ENV VERSION_SDK_TOOLS "4333796"
 
 ENV ANDROID_HOME "/sdk"
-ENV PATH "$PATH:${ANDROID_HOME}/tools"
+ENV PATH "$PATH:${ANDROID_HOME}/tools/bin"
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -qq update
