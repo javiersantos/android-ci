@@ -21,7 +21,7 @@ RUN apt-get install -qqy --no-install-recommends \
       libc6-i386 \
       lib32stdc++6 \
       lib32gcc1 \
-      lib32ncurses5 \
+      lib32ncurses5-dev \
       lib32z1 \
       unzip \
       zip \
