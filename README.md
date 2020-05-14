@@ -93,8 +93,10 @@ image: javiersantos/android-ci:26.0.2
 ```yml
 image: javiersantos/android-ci:27.0.3
 
+variables:
+  GRADLE_USER_HOME: "${CI_PROJECT_DIR}/.gradle"
+
 before_script:
-    - export GRADLE_USER_HOME=`pwd`/.gradle
     - chmod +x ./gradlew
 
 cache:
