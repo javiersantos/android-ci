@@ -44,10 +44,10 @@ RUN mkdir -p $ANDROID_SDK_ROOT/licenses/ \
  && echo "84831b9409646a918e30573bab4c9c91346d8abd\n504667f4c0de7af1a06de9f4b1727b84351f2910" > $ANDROID_SDK_ROOT/licenses/android-sdk-preview-license \
  && yes | sdkmanager "platforms;android-30"
 
-ADD packages.txt /sdk
 RUN mkdir -p /root/.android \
  && touch /root/.android/repositories.cfg \
  && sdkmanager --update
 
-RUN while read -r package; do PACKAGES="${PACKAGES}${package} "; done < /sdk/packages.txt && \
+ADD packages.txt /
+RUN while read -r package; do PACKAGES="${PACKAGES}${package} "; done < /packages.txt \
  && sdkmanager ${PACKAGES}
